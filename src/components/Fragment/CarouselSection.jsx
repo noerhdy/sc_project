@@ -1,5 +1,10 @@
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,21 +15,45 @@ import "swiper/css/scrollbar";
 
 export default () => {
   return (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <div className="max-w-full flex justify-center overflow-hidden ">
+      <div className="max-w-screen-2xl">
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto-play settings
+          navigation
+          // pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+        >
+          <SwiperSlide>
+            <div className="max-h-[80vh] ">
+              <img
+                className="object-cover w-full h-[600px] bg-center "
+                src="img/4.jpg"
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="max-h-[80vh] ">
+              <img
+                className="object-cover w-full h-[600px] bg-center "
+                src="img/2.jpg"
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="max-h-[80vh] ">
+              <img
+                className="object-cover w-full h-[600px] bg-center "
+                src="img/1.jpg"
+              ></img>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
   );
 };
