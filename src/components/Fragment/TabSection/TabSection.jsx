@@ -1,4 +1,4 @@
-import CardIndex from "@/components/Elements/card/CardIndex";
+import CardIndex from "@/components/Elements/card/card service/CardService";
 import React, { useState } from "react";
 
 const TabSection = () => {

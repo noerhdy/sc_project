@@ -3,7 +3,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -13,31 +12,27 @@ const components = [
   {
     title: "Alert Dialog",
     link: "/",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    description: "A modal dialog that .",
   },
   {
     title: "Hover Card",
     link: "/",
-    description:
-      "For sighted users to preview content available behind a link.",
+    description: "For sighted users tk.",
   },
   {
     title: "Progress",
     link: "/",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    description: "Displays an.",
   },
   {
     title: "Scroll-area",
     link: "/",
-    description: "Visually or semantically separates content.",
+    description: "Visually ",
   },
   {
     title: "Tabs",
     link: "/",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    description: "A set of laye",
   },
   {
     title: "Tooltip",

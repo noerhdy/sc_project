@@ -5,7 +5,7 @@ import {
   ServiceSection,
   TabIndex,
 } from "../Fragment";
-import Timeline from "../Elements/Timeline/Timeline";
+import TimelineDemo from "../Elements/Timeline/TimelineDemo";
 
 export const MainLayout = () => {
   return (
@@ -14,7 +14,7 @@ export const MainLayout = () => {
       <CarouselSection />
       <TabIndex />
       <ServiceSection />
-      <Timeline />
+      {/* <TimelineDemo /> */}
     </>
   );
 };
