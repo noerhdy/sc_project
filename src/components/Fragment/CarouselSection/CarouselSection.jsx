@@ -16,8 +16,9 @@ import "swiper/css/scrollbar";
 export default () => {
   return (
     <div className="max-w-full flex justify-center overflow-hidden ">
-      <div className="max-w-screen-2xl">
+      <div className="w-full">
         <Swiper
+          className="max-w-screen-2xl"
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           slidesPerView={1}
@@ -49,6 +50,14 @@ export default () => {
               <img
                 className="object-cover w-full h-[600px] bg-center "
                 src="img/1.jpg"
+              ></img>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="max-h-[80vh] ">
+              <img
+                className="object-cover w-full h-[600px] bg-center "
+                src="img/5.jpg"
               ></img>
             </div>
           </SwiperSlide>

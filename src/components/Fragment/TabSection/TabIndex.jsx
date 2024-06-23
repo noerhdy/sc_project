@@ -1,5 +1,5 @@
 import React from "react";
-import TabSection from "./Tab/TabSection";
+import TabSection from "./TabSection";
 
 const TabIndex = () => {
   return (

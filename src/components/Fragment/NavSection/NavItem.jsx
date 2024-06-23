@@ -47,7 +47,7 @@ const components = [
   },
 ];
 
-const NavMenu = () => {
+const NavItem = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -78,4 +78,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default NavItem;

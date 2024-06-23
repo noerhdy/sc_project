@@ -1,8 +1,10 @@
-import NavSection from "@/pages/NavSection";
 import React from "react";
-import CarouselSection from "../Fragment/CarouselSection";
-import TabSection from "../Fragment/Tab/TabSection";
-import TabIndex from "../Fragment/TabIndex";
+import {
+  CarouselSection,
+  NavSection,
+  ServiceSection,
+  TabIndex,
+} from "../Fragment";
 
 export const MainLayout = () => {
   return (
@@ -10,6 +12,7 @@ export const MainLayout = () => {
       <NavSection />
       <CarouselSection />
       <TabIndex />
+      <ServiceSection />
     </>
   );
 };
