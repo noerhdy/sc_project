@@ -1,4 +1,4 @@
-import CardDemo from "@/components/Elements/Card/CardDemo";
+import CardIndex from "@/components/Elements/card/CardIndex";
 import React, { useState } from "react";
 
 const TabSection = () => {
@@ -81,17 +81,18 @@ const TabSection = () => {
           aria-labelledby="horizontal-alignment-item-2"
           className={`${activeTab === 2 ? "" : "hidden"} flex gap-4 m-4`}
         >
-          <CardDemo />
+          <CardIndex
+            name="Hello"
+            imgUrl="./img/2.jpg"
+            text="loremlorem lorem lorenm"
+          />
         </div>
         <div
           id="horizontal-alignment-3"
           role="tabpanel"
           aria-labelledby="horizontal-alignment-item-3"
           className={`${activeTab === 3 ? "" : "hidden"} flex gap-4 m-4`}
-        >
-          <CardDemo />
-          <CardDemo />
-        </div>
+        ></div>
       </div>
     </>
   );
