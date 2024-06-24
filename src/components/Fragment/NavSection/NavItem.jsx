@@ -47,7 +47,9 @@ const NavItem = () => {
     <NavigationMenu>
       <NavigationMenuList className="md:gap-6 gap-2">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-md">
+            Item One
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <div>
               <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -65,7 +67,9 @@ const NavItem = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Item two</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-md">
+            Item two
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <div>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">

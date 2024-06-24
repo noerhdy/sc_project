@@ -5,15 +5,19 @@ import {
   ServiceSection,
   TabIndex,
 } from "../Fragment";
-import TimelineDemo from "../Elements/Timeline/TimelineDemo";
+// import TimelineDemo from "../Elements/Timeline/TimelineDemo";
 
 export const MainLayout = () => {
   return (
     <>
       <NavSection />
       <CarouselSection />
-      <TabIndex />
-      <ServiceSection />
+      <div className="flex justify-center ">
+        <div className="max-w-screen-xl  overflow-hidden">
+          <TabIndex />
+          <ServiceSection />
+        </div>
+      </div>
       {/* <TimelineDemo /> */}
     </>
   );
