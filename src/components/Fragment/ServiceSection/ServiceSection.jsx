@@ -7,7 +7,7 @@ const ServiceSection = () => {
     <>
       <div className="w-full flex justify-center">
         <div className="max-w-screen-xl flex flex-col gap-6 px-6">
-          <div className="w-auto rounded-xl flex overflow-hidden flex-wrap justify-center items-center md:gap-24 gap-0 bg-zinc-900">
+          <div className="w-auto rounded-xl flex overflow-hidden flex-wrap justify-center items-center md:gap-24 gap-0 bg-zinc-500">
             <div className="relative">
               <div className="w-full h-full bg-black opacity-40 group-hover:opacity-0 ease-in-out duration-500 absolute"></div>
               <img

@@ -45,12 +45,12 @@ const components = [
 const NavItem = () => {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="md:gap-6 gap-2">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
           <NavigationMenuContent>
             <div>
-              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 {components.map((component) => (
                   <ListItem
                     key={component.title}
@@ -64,10 +64,22 @@ const NavItem = () => {
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <div className=" flex space-x-8 px-4 cursor-pointer">
-          <NavigationMenuItem>Item Two</NavigationMenuItem>
-          <NavigationMenuItem>Item Two</NavigationMenuItem>
-        </div>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Item two</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <div>
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                {components.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    link={component.link}
+                  ></ListItem>
+                ))}
+              </ul>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );

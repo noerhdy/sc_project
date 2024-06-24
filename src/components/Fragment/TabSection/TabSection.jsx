@@ -1,4 +1,4 @@
-import CardIndex from "@/components/Elements/card/card service/CardService";
+import CardProduct from "@/components/Elements/card/card product/CardProduct";
 import React, { useState } from "react";
 
 const TabSection = () => {
@@ -69,30 +69,31 @@ const TabSection = () => {
           id="horizontal-alignment-1"
           role="tabpanel"
           aria-labelledby="horizontal-alignment-item-1"
-          className={`${activeTab === 1 ? "" : "hidden"}`}
+          className={`${
+            activeTab === 1 ? "" : "hidden"
+          } flex gap-4 m-4  flex-wrap`}
         >
-          <p className="text-gray-500 dark:text-neutral-400">
-            This is the item's tab body.
-          </p>
+          <CardProduct />
         </div>
         <div
           id="horizontal-alignment-2"
           role="tabpanel"
           aria-labelledby="horizontal-alignment-item-2"
-          className={`${activeTab === 2 ? "" : "hidden"} flex gap-4 m-4`}
+          className={`${
+            activeTab === 2 ? "" : "hidden"
+          } flex gap-4 m-4  flex-wrap`}
         >
-          <CardIndex
-            name="Hello"
-            imgUrl="./img/2.jpg"
-            text="loremlorem lorem lorenm"
-          />
+          <CardProduct />
+          <CardProduct />
         </div>
         <div
           id="horizontal-alignment-3"
           role="tabpanel"
           aria-labelledby="horizontal-alignment-item-3"
           className={`${activeTab === 3 ? "" : "hidden"} flex gap-4 m-4`}
-        ></div>
+        >
+          <CardProduct />
+        </div>
       </div>
     </>
   );
